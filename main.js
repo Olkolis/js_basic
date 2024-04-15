@@ -10,22 +10,24 @@
 //     console.log('Fizz')
 // };
 
-// let i = +prompt('Введіть рік','')
+let i = +prompt('Введіть рік','')
 
-// if (i % 4 === 0){
-//     console.log('Рік високосний')
-// } else {
-//     console.log('Рік не високосний')
-// }
-
-let i = +prompt('Введіть скільки вам років',);
-
-let j = i % 10;
-if (j == 1){
-    console.log(`Тобі ${i} рік`);
-} else if (j >= 2 && j <= 4){
-    console.log(`Тобі ${i} роки`);
-} else if (j >= 5 || j == 0){
-    console.log(`Тобі ${i} років`);
+if (i % 400 === 0){
+    console.log('Рік високосний');
+}else if (i % 100 === 0){
+    console.log('Рік не високосний');
+} else if (i % 4 === 0){
+    console.log('Рік високосний');
 }
+
+// let i = +prompt('Введіть скільки вам років',);
+
+// let j = i % 10;
+// if (j == 1){
+//     console.log(`Тобі ${i} рік`);
+// } else if (j >= 2 && j <= 4){
+//     console.log(`Тобі ${i} роки`);
+// } else if (j >= 5 || j == 0){
+//     console.log(`Тобі ${i} років`);
+// }
 
