@@ -23,23 +23,23 @@
 
 
 
-// function findGCD(a, b) {
-//         // if (b > a) return findGCD(b, a);
-//         // if (!b) return a;
-//         // return findGCD(b, a % b);
+function findGCD(a, b) {
+        // if (b > a) return findGCD(b, a);
+        // if (!b) return a;
+        // return findGCD(b, a % b);
         
-//         let a1 = a;
-//         let b1 = b;
+        let a1 = a;
+        let b1 = b;
 
-//         while(a != 0 && b != 0){
-//             if(a1 > b1){
-//                 a1 %= b1;
-//             } else {
-//                 b1 %= a1;
-//             }
-//         }
-//     return a + b; 
-//     }
-const findGCD = (a, b) => (!b ? a : findGCD(b, a % b));
+        while(a != 0 && b != 0){
+            if(a1 > b1){
+                a1 %= b1;
+            } else {
+                b1 %= a1;
+            }
+        }
+    return a1 + b1; 
+}
+// const findGCD = (a, b) => (!b ? a : findGCD(b, a % b));
 
 console.log(findGCD(6, 9))
