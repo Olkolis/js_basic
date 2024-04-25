@@ -34,19 +34,14 @@ console.log(padString('Ivan', 8, '*', 'toLeft'))
 
 // Вам необхідно написати функцію camelCase(str, separator), яка приймає на вхід рядок і перетворює його до формату camelCase.
 
-// function camelCase(str, separator){
-//     let tr = str.toLowerCase().replaceAll(' ','');
-//     return tr.replaceAll(str[separator], str[separator].toUpperCase());
-//     }
-
 function camelCase(str){
-    let tr = str.toLowerCase().split(' ');
-    let st = tr[0];
-        for (let i = 0; i < tr.length; i++){
-            st += st.replaceAll(tr[i], tr[i].toUpperCase())
-        }
-    return st
+    let word = str.toLowerCase().split(' ');
+    let resoult = word[0];
+
+    for (let i = 1; i < word.length; i += 1){
+        let x = word[i];
+        resoult += x[0].toUpperCase() + x.substring(1);
     }
-
-console.log(camelCase('Ivan nerov'))
-
+    return resoult;
+}
+console.log(camelCase('qqqqq qqq qq qqqqqq'));
