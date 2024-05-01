@@ -16,5 +16,4 @@ function calculateAverageGrade(students){
 		}
 	return (gradeSum/itemsFound).toFixed(1);
 }
-
 console.log(calculateAverageGrade(students)); // 4.4;
