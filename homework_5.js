@@ -1,25 +1,27 @@
-// function reverseString(str){
-//     let newString = '';
-//     for(let i = str.length - 1; i >= 0; i--){
-//         newString += str[i];
-//     }
-//     return newString
-// }
+function reverseString(str){
+    let newString = '';
+    for(let i = str.length - 1; i >= 0; i--){
+        newString += str[i];
+    }
+    return newString
+}
 
-// console.log(reverseString("Hello World"));
+console.log(reverseString("Hello World"));
 
-// function isPalindrome(str){
-//     let nString = str.toLowerCase();
-//     let newString = '';
+// 2
 
-//     for(let i = str.length - 1; i >= 0; i--){
-//         newString += str[i].toLowerCase();
-//     }
-//     return (newString == nString) ? true : false;
-// }
+function isPalindrome(str){
+    let nString = str.toLowerCase();
+    let newString = '';
 
-// console.log(isPalindrome("HeLLeh"));
-// console.log(isPalindrome("hello worlD"));
+    for(let i = str.length - 1; i >= 0; i--){
+        newString += str[i].toLowerCase();
+    }
+    return (newString == nString) ? true : false;
+}
+
+console.log(isPalindrome("HeLLeh"));
+console.log(isPalindrome("hello worlD"));
 
 
 
